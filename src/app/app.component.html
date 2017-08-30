@@ -1,0 +1,26 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+<div>
+  <h1>
+        {{pageHeader ? pageHeader : 'No here value'}}
+  </h1>
+    Name:<input [(ngModel)]='firstName'/>
+    <br/>
+    you entered:{{firstName}}
+    <img [src]="pageLogo"/>
+    <div>{{fullName()}}</div>
+    <button [disabled]='isDisable'>Click me</button>
+    <span bind-innerHTML='pageHeaderNew'></span>
+    <my-employee></my-employee>
+
+        <button [class.buttonColor]="applyBoldClass">Click this</button>
+        <button [ngClass]="addClass()">Click this</button>
+    <button style="color:red" [style.font-weight]="isBold ? 'bold' : 'normal'">Inline</button>
+    <list-employee></list-employee>
+</div>
+
+ 
+
+
+
+
